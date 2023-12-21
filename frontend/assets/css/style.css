@@ -335,12 +335,37 @@
 .bg-black{
     background-color: #000;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .gra h1{
-        font-size: 110px;
+        font-size: 60px;
+        font-weight: bolder;
     }
     .gra{
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+}
+@media (min-width: 767px) {
+    .gra h1{
+        font-size: 110px;
+        font-weight: bold;
+    }
+    .gra{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+.rtext h3{
+    font-size: 40px;
+    font-weight:600;
+}
+.rtext p{
+    font-size: 25px;
+    /* font-weight:600; */
+}
+@media screen and (min-width: 992px){
+    .rtext {
+        position: absolute;
+        bottom: -450px;
     }
 }
