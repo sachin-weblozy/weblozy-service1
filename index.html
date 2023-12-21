@@ -39,6 +39,7 @@
             display: inline-block;
             transition: 0.1s ease-in;
          }
+         
          .s-text{
             font-size: 13px;
          }
@@ -46,9 +47,9 @@
             transform: translateX(50%);
          }
          .navitema svg{
-            width: 15px;
+            width: 20px;
             stroke-width: 50px;
-            color: black;
+            /* color: black; */
          }
          .menu-block ul li a img{
             width: 20px;
@@ -128,6 +129,66 @@
             transition: all 0.3s ease; 
             -webkit-transition: all 0.3s ease; 
          }
+          .webdev {
+            color: #ffd9e2;
+            /* text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c; */
+            text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+            -webkit-animation: blink 4s infinite alternate;
+                     animation: blink 4s infinite alternate;
+            }
+            .socod {
+            font-size: 11vw;
+            color: #d4eaff;
+            text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+            -webkit-animation: buzz 0.01s infinite alternate;
+                     animation: buzz 0.01s infinite alternate;
+            }
+            
+            @-webkit-keyframes buzz {
+            70% {
+               opacity: 0.80;
+            }
+            }
+            
+            @keyframes buzz {
+            70% {
+               opacity: 0.80;
+            }
+            }
+            @-webkit-keyframes blink {
+            40% {
+               opacity: 1;
+            }
+            42% {
+               opacity: 0.8;
+            }
+            43% {
+               opacity: 1;
+            }
+            45% {
+               opacity: 0.2;
+            }
+            46% {
+               opacity: 1;
+            }
+            }
+            @keyframes blink {
+            40% {
+               opacity: 1;
+            }
+            42% {
+               opacity: 0.8;
+            }
+            43% {
+               opacity: 1;
+            }
+            45% {
+               opacity: 0.2;
+            }
+            46% {
+               opacity: 1;
+            }
+            }
          .get-started-btn:hover {
             background-color: #05c;
          }
@@ -421,50 +482,49 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/web-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webdev.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Web Development <span class="s-text">Progressive web solutions</span>
+                                             <img src="frontend/assets/imgs/navicons/web-development.svg" alt=""> Web Development <br><span class="s-text">Crafting Digital Experiences</span>
                                           </div>
                                        </a>
                                     </li>
                                     <li>
                                        <a href="https://www.weblozy.com/services/web-design" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webdesign.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> UI/UX Design <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/ui-ux.svg" alt=""> UI/UX Design <br><span class="s-text">Elegant Design Solutions</span>
                                           </div>
                                        </a>
                                     </li>
                                     <li>
                                        <a href="https://www.weblozy.com/services/ecommerce-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/ecommerce.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Ecommerce Development <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/ecommerce-development.svg" alt=""> Ecommerce Development <br><span class="s-text">Empowering Online Commerce</span>
                                           </div>
                                        </a>
                                     </li>
                                     <li>
                                        <a href="https://www.weblozy.com/services/web-application-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webapp.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Web Application Development <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/web-application.svg" alt=""> Web Application Development <br><span class="s-text">Innovative Digital Solutions</span>
                                           </div>
                                        </a>
                                     </li>
                                  </ul>
                               </div>
-                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/marketing.svg">
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/marketing.svg" style="background-color: antiquewhite;">
                                  <div class="item-title">
                                     Digital Marketing
                                  </div>
                                  <ul class="item">
                                     <li>
-                                       
                                        <a href="https://www.weblozy.com/services/digital-marketing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/digitalmarketing.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Digital Marketing <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/digital-marketing.svg" alt=""> Digital Marketing <br><span class="s-text">Drive Digital Growth</span>
                                           </div>
                                        </a>
                                     </li>
                                     <li>
                                        <a href="https://www.weblozy.com/services/search-engine-optimization" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/seo.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Search Engine Optimization (SEO) <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/seo.svg" alt=""> Search Engine Optimization (SEO) <br><span class="s-text">Boosting Online Visibility</span>
                                           </div>
                                        
                                        </a>
@@ -472,7 +532,7 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/social-media-optimization" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/smo.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Social Media Optimization (SMO) <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/smo.svg" alt=""> Social Media Optimization (SMO) <br><span class="s-text">Igniting Social Presence</span>
                                           </div>
                                        
                                        </a>
@@ -480,7 +540,7 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/paid-marketing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/ppc.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Paid Marketing <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/paid-marketing.svg" alt=""> Paid Marketing <br><span class="s-text">Strategic Ad Solutions</span>
                                           </div>
                                        
                                        </a>
@@ -488,7 +548,7 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/content-writing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/contentwriting.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Content Writing <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/content-writing.svg" alt=""> Content Writing <br><span class="s-text">Content that sells</span>
                                           </div>
                                        
                                        </a>
@@ -503,7 +563,7 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/software-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/software.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Custom Software Development <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/custom-software-development.svg" alt=""> Custom Software Development <br><span class="s-text">Tailored Tech Solutions</span>
                                           </div>
                                        
                                        </a>
@@ -511,7 +571,7 @@
                                     <li>
                                        <a href="https://www.weblozy.com/services/cloud-application-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/software.svg">
                                           <div class="navitema">
-                                             <img src="frontend/assets/imgs/application-dev-icon1.png" alt=""> Cloud Application Development <span class="s-text"></span>
+                                             <img src="frontend/assets/imgs/navicons/cloud-application-development.svg" alt=""> Cloud Application Development <br><span class="s-text">Seamless Cloud Solutions</span>
                                           </div>
                                        
                                        </a>
@@ -623,7 +683,7 @@
                   </nav>
                </div>
                 <div class="change-wrap-text updated-index-wrap-text">
-                    <h1>Full Stack Food Tech</h1>
+                    <h1 class="webdev">Full Stack Food Tech</h1>
                 </div>
                 <p class="">One stop digital solution for your restaurant</p>
                 <a href="#" class="get-started-btn mt-2 mb-3" data-toggle="modal" data-target="#requestDemoModalNew">Get
@@ -646,6 +706,9 @@
                 </div> -->
                 </div>
             </div>
+        </section>
+        <section>
+            
         </section>
          <section class="section section-hero" id="hero">
             <img src="https://www.weblozy.com/uploads/2023/07/2.webp" alt class="lazyload" width="1920" height="600">
