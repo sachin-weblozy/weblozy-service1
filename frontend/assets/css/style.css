@@ -447,17 +447,33 @@
     bottom: 20%;
     padding: 8%;
 }
+.threecardbg{
+   position: absolute;
+   opacity: 0.2;
+   top: 10px;
+   right: 10px;
+   overflow: hidden;
+}
+.threecardbg img{
+   height: 150px;
+}
 .custom-card1{
    background-image: url(http://robindelaporte.fr/codepen/visa-bg-4.jpg);
    background-position: center;
    background-repeat: no-repeat;
    border-radius: 20px;
-   box-shadow: 0 45px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+   box-shadow: 0 16px 40px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
    
 }
 .custom-card2{
    background-color: #F8F8F8;
    padding: 22px 22px 0px 22px;
+   border-radius: 20px;
+   
+}
+.custom-card3{
+   background-color: #F8F8F8;
+   padding: 22px;
    border-radius: 20px;
    
 }
