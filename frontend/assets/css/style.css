@@ -467,15 +467,20 @@
 }
 .custom-card2{
    background-color: #F8F8F8;
-   padding: 22px 22px 0px 22px;
+   padding: 22px 22px 22px 22px;
    border-radius: 20px;
    
 }
-.custom-card3{
+.bg-grey{
    background-color: #F8F8F8;
-   padding: 22px;
+}
+.custom-card3{
+   /* padding: 22px; */
    border-radius: 20px;
-   
+}
+.custom-card3 h1{
+   font-size: 50px;
+   font-weight: bold;
 }
 .custom-faq{
    background-image: url(../imgs/car.jpg);
