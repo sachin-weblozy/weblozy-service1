@@ -1,10 +1,10 @@
 .menu-block ul li .navitema{
-    padding: 12px 10px;
+    padding: 7px 10px;
     border-radius: 10px;
     transition: all 700ms ease;
  }
  .menu-block ul li .navitema:hover{
-    background-color: aliceblue;
+    background-color: #D2E289;
     transition: all 700ms ease;
  }
  .navitema span {
@@ -48,9 +48,9 @@
     padding-bottom: 140px;
  }
  .hero-section-wrap .hero-section p {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     color: #ffffff;
  }
  .hero-img-block .img-sec {
@@ -175,12 +175,12 @@
     padding-top: 280px;
  }
  .up-hero-section-wrap .hero-section {
-    height: 1380px;
-    padding-top: 150px;
+    height: 1210px;
+    padding-top: 110px;
  }
  @media (min-width: 1199px) {
     .hero-section .change-wrap-text h1 {
-          font-size: 110px;
+          font-size: 95px;
        }
  }
  @media (min-width: 992px) and (max-width: 1199px) {
@@ -192,13 +192,13 @@
        padding-top: 140px;
     }
     .up-hero-section-wrap .hero-section {
-       height: 1250px;
+       height: 1060px;
     }
     .up-hero-section-wrap #gradient-canvas {
        height: 1250px;
     }
     .hero-section .change-wrap-text h1 {
-       font-size: 110px;
+       font-size: 95px;
     }
  }
  @media (min-width: 768px) and (max-width: 991px) {
@@ -208,7 +208,7 @@
        padding: 0;
     }
     .hero-section .change-wrap-text h1 {
-       font-size: 110px;
+       font-size: 95px;
     }
     .hero-section .change-wrap-text h1 {
        font-size: 78px;
@@ -249,7 +249,7 @@
     .hero-section-wrap .hero-section {
        padding-top: 140px;
        margin-bottom: 70px;
-       height: 1200px;
+       height: 930px;
     }
  }
  @media (max-width: 767px) {
@@ -257,7 +257,7 @@
         font-size: 50px;
      }
     .hero-section-wrap .hero-section {
-       height: 700px;
+       height: 750px;
        margin-bottom: 50px;
     }
     .hero-section-wrap .hero-section p {
@@ -478,5 +478,5 @@
     color: #fff;
     position: absolute;
     bottom: 20%;
-    padding-left: 5%;
+    padding: 8%;
 }
