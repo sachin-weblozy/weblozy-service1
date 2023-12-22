@@ -180,7 +180,7 @@
  }
  @media (min-width: 1199px) {
     .hero-section .change-wrap-text h1 {
-          font-size: 95px;
+          font-size: 80px;
        }
  }
  @media (min-width: 992px) and (max-width: 1199px) {
@@ -198,7 +198,7 @@
        height: 1250px;
     }
     .hero-section .change-wrap-text h1 {
-       font-size: 95px;
+       font-size: 80px;
     }
  }
  @media (min-width: 768px) and (max-width: 991px) {
@@ -208,7 +208,7 @@
        padding: 0;
     }
     .hero-section .change-wrap-text h1 {
-       font-size: 95px;
+       font-size: 80px;
     }
     .hero-section .change-wrap-text h1 {
        font-size: 78px;
@@ -331,43 +331,10 @@
 .dcard__white{
     background-color: #fff;
     color: #000;
+    padding: 45px 25px !important;
 }
 .bg-black{
     background-color: #000;
-}
-@media (max-width: 767px) {
-    .gra h1{
-        font-size: 60px;
-        font-weight: bolder;
-    }
-    .gra{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-@media (min-width: 767px) {
-    .gra h1{
-        font-size: 110px;
-        font-weight: bold;
-    }
-    .gra{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-.rtext h3{
-    font-size: 40px;
-    font-weight:600;
-}
-.rtext p{
-    font-size: 25px;
-    /* font-weight:600; */
-}
-@media screen and (min-width: 992px){
-    .rtext {
-        position: absolute;
-        bottom: -450px;
-    }
 }
 
 .parent {
@@ -479,4 +446,87 @@
     position: absolute;
     bottom: 20%;
     padding: 8%;
+}
+.custom-card1{
+   background-image: url(http://robindelaporte.fr/codepen/visa-bg-4.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 20px;
+   box-shadow: 0 45px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+   
+}
+
+.cover {
+   display: inline-block;
+   height: 280px;
+    width: 100%;
+    border-radius: 20px;
+ }
+
+ 
+.atvImg {
+	border-radius: 8px;
+	transform-style: preserve-3d;
+	-webkit-tap-highlight-color: rgba(#000,0);
+}
+
+.atvImg img {
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(14,21,47,0.25);
+}
+
+.atvImg-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	transition: all 0.2s ease-out;
+}
+
+.atvImg-container.over .atvImg-shadow {
+	box-shadow: 0 45px 100px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+}
+
+.atvImg-layers {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+.atvImg-rendered-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%; 
+	left: 0%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: cover;
+	transition: all 0.1s ease-out;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.atvImg-shadow {
+	position: absolute;
+	top: 5%; 
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	transition: all 0.2s ease-out;
+	box-shadow: 0 8px 30px rgba(14,21,47,0.6);
+}
+
+.atvImg-shine {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+	border-radius: 8px;
+	background: linear-gradient(135deg, rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);
 }
