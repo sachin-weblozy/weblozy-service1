@@ -478,7 +478,10 @@
    
 }
 .custom-faq{
-   /* background-color: #000; */
+   background-image: url(../imgs/car.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .collapsible-link {
    width: 100%;
@@ -499,4 +502,22 @@
  
  .collapsible-link[aria-expanded="true"]::before {
    content: "\f106";
+ }
+ .accordion-black{
+   background-color: #000;
+   color: #fff;
+ }
+ .accordion-black button{
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: 300;
+ }
+ .accordion-white{
+   background-color: #fff;
+   color: #000;
+ }
+ .accordion-white button{
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: 300;
  }
