@@ -13,6 +13,12 @@
       <link rel="apple-touch-icon" href="https://www.weblozy.com/fav_weblozy.png" />
       <meta name="msapplication-TileImage" content="https://www.weblozy.com/fav_weblozy.png" />
       <style>
+        body{
+            overflow:visible !important;
+         }
+         
+      </style>
+      <style>
          .mediabox-img.ls-blur-up-is-loading,
          .mediabox-img.lazyload:not([src]) {
          visibility: hidden;
@@ -307,7 +313,17 @@
          <section class="section section-cs-content">
             <div class="container">
                <div class="gap-5 d-flex align-items-start flex-column flex-lg-row">
-                  <div class="toc"></div>
+                  <div class="toc">
+                     <div class="gap-2 nav flex-lg-column justify-content-center justify-content-lg-start nav-pills toc-content" role="tablist" aria-orientation="vertical">
+                        <a href="#Introduction" class="nav-link">Introduction</a>
+                        <a href="#Motive" class="nav-link">Motive</a>
+                        <a href="#Challenges" class="nav-link">Challenges</a>
+                        <a href="#Solution" class="nav-link active">Solution</a>
+                        <a href="#Backend Features" class="nav-link">Backend Features</a>
+                        <a href="#Results" class="nav-link">Results</a>
+                        <a href="#Conclusion" class="nav-link">Conclusion</a>
+                     </div>
+                  </div>
                   <div class="tab-content flex-fill w-100" id="about-pills-tabContent">
                      <div class="tab-pane fade show active" id="about-content" role="tabpanel" aria-labelledby="about-content" tabindex="0">
                         <div class="text-wrapper">
