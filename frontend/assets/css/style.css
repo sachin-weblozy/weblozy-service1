@@ -1,5 +1,6 @@
  .hero-section-wrap {
-    background-color: rgb(10, 10, 10);
+    background-color: #262e45;
+    /* background-color: rgb(10, 10, 10); */
  }
  .hero-section-wrap {    
     width: 100%;
@@ -305,6 +306,9 @@
     color: #000;
     padding: 45px 25px !important;
 }
+.blurcards .dcard__bosy{
+   backdrop-filter: blur(6px);
+}
 .bg-black{
     background-color: #000;
 }
@@ -371,26 +375,32 @@
     .parent {width: 100%; margin: 20px 0px;}
     .wrapper {padding: 20px 20px;}
 }
-
+.bg-theme{
+   background-color: #262e45 !important;
+}
+.bg-theme2{
+   background-color: #e3c2a0 !important;
+}
 .fsec{
     height: 700px;
     position: relative;
     transition: transform 1s ease;
     transform: translateX(0px);
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+    /* filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(881%) hue-rotate(187deg) brightness(91%) contrast(88%); */
 }
 .fsec_img1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(https://www.weblozy.com/uploads/2023/12/img1.jpeg);
+    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img1.jpeg);
 }
 .fsec_img2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(https://www.weblozy.com/uploads/2023/12/img2.jpeg);
+    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img2.jpeg);
 }
 .fsec_img3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(https://www.weblozy.com/uploads/2023/12/img3.jpeg);
+    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img3.jpeg);
 }
 .fsec_img4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(https://www.weblozy.com/uploads/2023/12/img4.jpeg);
+    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img4.jpeg);
 }
 
 .fsec:hover{
@@ -429,14 +439,42 @@
 .threecardbg img{
    height: 150px;
 }
+.customcard2bg{
+   position: absolute;
+   opacity: 0.2;
+   top: 10px;
+   right: 10px;
+   overflow: hidden;
+}
+.customcard2bg img{
+   height: 100px;
+}
 .custom-card1{
-   background-image: url(http://robindelaporte.fr/codepen/visa-bg-4.jpg);
    background-position: center;
+   background-size: cover;
    background-repeat: no-repeat;
    border-radius: 20px;
    box-shadow: 0 16px 40px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
-   
 }
+.custom-card1a{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-finance2.webp);
+}
+.custom-card1b{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-health.webp);
+}
+.custom-card1c{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-ecommerce.webp);
+}
+.custom-card1d{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-education.webp);
+}
+.custom-card1e{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-management.webp);
+}
+.custom-card1f{
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-cosmetic.webp);
+}
+
 .custom-card2{
    /* background-color: #F8F8F8; */
    padding: 22px 22px 22px 22px;
@@ -455,7 +493,7 @@
    font-weight: bold;
 }
 .custom-faq{
-   background-image: url(https://www.weblozy.com/uploads/2023/12/car.jpg);
+   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-new.webp);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -509,15 +547,337 @@
    .right-side {width:100%; vertical-align:top; }
 }
 @media screen and (min-width: 992px) {
-   .left-side {width:30%; height:auto;  margin-bottom: 50px; display:inline-block; float:left; position:sticky; top:125px; }
+   .left-side {width:30%; height:auto;  margin-bottom: 50px; display:inline-block; float:left; position:sticky; top:125px;}
    .leftright-section {width:100%;  clear:both;}
    .leftright-section:before, .leftright-section:after {content:''; display:table; clear:both;}
    .right-side {width:65%; display:inline-block; vertical-align:top; float:right;}
+   .w80desk{
+      width: 80%;
+   }
 }
 .customtoc a { border-radius: 10px; padding: 8px;}
 .customtoc .active {background-color: #d2e289;transition: all 700ms ease; border-radius: 5px; padding: 15px;}
 
 .articleslider .carousel-item img{
-   /* height: 700px; */
-   width: auto;
+   height: 700px;
+   position: relative;
+   transition: transform 1s ease;
+   transform: translateX(0px);
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+   max-width: none !important;
+   width: auto !important;
+   background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+
+.related-tags{
+   border: 1px solid gray;
+   border-radius: 70px;
+   margin-bottom: 5px;
+   font-weight: 500;
+   background-color: #efefef;
+   padding: 10px 20px;
+   display: inline-table;
+}
+.related-tags:hover{
+   background-color: #f5e8dc;  
+}
+.left-side{
+   /* padding: 18px;  */
+   border: 1px solid slategrey;
+   border-radius: 10px;
+}
+.left-side .head{
+   padding: 15px 18px;
+   background-color: rgb(233, 233, 233);
+   border: 1px solid rgb(233, 232, 232);
+   border-radius: 10px 10px 0px 0px;
+}
+.left-side .toc-points{
+   padding: 15px 18px;
+}
+.blurbg{
+   filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px);
+}
+.service-details-page .footer-cf-section  {
+   position: relative;
+}
+.service-details-page .footer-cf-section:before {
+   background: #262e45;
+   bottom: 0;
+   content: "";
+   height: 50%;
+   left: 0;
+   position: absolute;
+   width: 100%;
+   z-index: -1;
+}
+.service-details-page .footer-cf-section .footer-cf .form {
+   background: transparent;
+   padding: 0;
+}
+.service-details-page .footer-cf-section .footer-cf .form-field {
+   background-color: transparent;
+   color: #fff;
+}
+.service-details-page .footer-cf-section .footer-cf .form-col label {
+   color: #ddd;
+}
+.service-details-page .footer-cf-section .footer-cf .form-col i {
+   color: #e3c2a0;
+}
+.service-details-page .footer-cf-section .footer-cf .details {
+   padding: 2rem;
+}
+.service-details-page .footer-cf-section .footer-cf .cf-anim {
+   height: 100%;
+   left: 0;
+   opacity: .2;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
+
+.glow-on-hover {
+   border: none;
+   outline: none;
+   position: relative;
+   z-index: 0;
+}
+
+.glow-on-hover:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left:-2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+}
+
+.glow-on-hover:hover:before {
+   opacity: 1;
+}
+
+.glow-on-hover:after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: #e3c2a0;
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+}
+
+@keyframes glowing {
+   0% { background-position: 0 0; }
+   50% { background-position: 400% 0; }
+   100% { background-position: 0 0; }
+}
+
+
+
+.ot-btn {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+	border: none;
+	text-transform: capitalize;
+	text-align: center;
+	background-color: #e3c2a0;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	padding: 19.5px 35px;
+	min-width: 170px;
+	border-radius: 30px
+}
+
+.ot-btn:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	background-color: #1C1C25;
+	z-index: -1;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	border-radius: inherit
+}
+
+.ot-btn i {
+	font-size: 0.95em
+}
+
+.ot-btn:hover,
+.ot-btn.active {
+	color: #ffffff;
+	box-shadow: none
+}
+
+.ot-btn:hover::before,
+.ot-btn.active::before {
+	width: 100%
+}
+
+.ot-btn.style2 {
+	background-color: transparent;
+	color: #000;
+	border: 1px solid #000000;
+	padding: 20px 40px;
+	box-shadow: none
+}
+
+.ot-btn.style2:hover {
+	color: #1C1C25;
+	border-color: #ffffff;
+	border: 1px solid #000000;
+}
+
+.ot-btn.style2:hover:before,
+.ot-btn.style2:hover:after {
+	background-color: #e3c2a0;
+}
+
+.ot-btn.style3:hover {
+	color: #1C1C25
+}
+
+.ot-btn.style3:hover:before,
+.ot-btn.style3:hover:after {
+	background-color: #ffffff
+}
+
+.ot-btn.style4 {
+	background-color: #1C1C25;
+	color: #ffffff
+}
+
+.ot-btn.style4:hover {
+	color: #ffffff
+}
+
+.ot-btn.style4:hover:before,
+.ot-btn.style4:hover:after {
+	background-color: #e3c2a0
+}
+
+.ot-btn.style5 {
+	background-color: #e3c2a0;
+	color: #ffffff
+}
+
+.ot-btn.style5:hover {
+	color: #e3c2a0
+}
+
+.ot-btn.style5:hover:before,
+.ot-btn.style5:hover:after {
+	background-color: #ffffff
+}
+
+.ot-btn.style6 {
+	background-color: #1C1C25
+}
+
+.ot-btn.style6:hover {
+	color: #e3c2a0
+}
+
+.ot-btn.style6:hover:before,
+.ot-btn.style6:hover:after {
+	background-color: #ffffff
+}
+
+.ot-btn.btn-fw {
+	width: 100%
+}
+
+.ot-btn.btn-fw:before,
+.ot-btn.btn-fw:after {
+	display: none
+}
+
+.ot-btn.btn-fw:hover {
+	background-color: #1C1C25
+}
+
+.ot-btn.btn-sm {
+	padding: 14.5px 25px;
+	min-width: 145px
+}
+
+.cta-bg-img{
+   /* background-image: url('https://www.weblozy.com/uploads/2023/12/visa-bg-4.webp');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
+   background-color: #262e45;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+
+}
+.slide-track {
+   animation: scroll 40s linear infinite;
+   display: flex;
+   width: calc(250px * 14);
+}
+.slide {
+   height: 100px;
+   width: 250px;
+}
+
+.font50{
+   font-size: 50px !important;
+}
+.font43{
+   font-size: 43px !important;
+}
+.font40{
+   font-size: 40px !important;
+}
+.font30{
+   font-size: 30px !important;
+}
+.font22{
+   font-size: 22px !important;
+}
+.myfaq button{
+   width: 98%;
+   margin-top: 1%;
+   margin-bottom: 1%;
+   margin-right: auto;
+   margin-left: auto;
+   border-radius: 4px;
 }
