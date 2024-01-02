@@ -706,7 +706,7 @@
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1;
-	padding: 19.5px 35px;
+	padding: 14.5px 0px;
 	min-width: 170px;
 	border-radius: 30px
 }
@@ -846,7 +846,14 @@
 	overflow:hidden;
 	position: relative;
 	width: auto;
-
+}
+.logoslider img {
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+}
+.logoslider img:hover {
+   -webkit-filter: none;
+   filter:none;
 }
 .logoslide-track {
    animation: scroll 40s linear infinite;
