@@ -840,7 +840,7 @@
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
-.slider {
+.logoslider {
 	height: 100px;
 	margin: auto;
 	overflow:hidden;
@@ -848,12 +848,12 @@
 	width: auto;
 
 }
-.slide-track {
+.logoslide-track {
    animation: scroll 40s linear infinite;
    display: flex;
    width: calc(250px * 14);
 }
-.slide {
+.logoslide {
    height: 100px;
    width: 250px;
 }
