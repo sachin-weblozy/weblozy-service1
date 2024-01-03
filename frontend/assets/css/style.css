@@ -498,6 +498,11 @@
    background-repeat: no-repeat;
    background-size: cover;
 }
+
+.custom-faq .accordion-item button{
+   border-bottom: none !important;
+}
+
 .collapsible-link {
    width: 100%;
    position: relative;
@@ -581,7 +586,7 @@
    display: inline-table;
 }
 .related-tags:hover{
-   background-color: #f5e8dc;  
+   background-color: #e3c2a0;  
 }
 .left-side{
    /* padding: 18px;  */
@@ -887,4 +892,13 @@
    margin-right: auto;
    margin-left: auto;
    border-radius: 4px;
+}
+.logohead{
+   position: absolute;
+   height: 100%;
+   background-color: #262e45;
+   z-index: 2;
+   color: #e3c2a0;
+   vertical-align: middle;
+   padding: 10px 40px;
 }
