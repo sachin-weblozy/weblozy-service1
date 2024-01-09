@@ -1,9 +1,14 @@
- .hero-section-wrap {
-    background-color: #262e45;
-    /* background-color: rgb(10, 10, 10); */
+ .hero-section-wrapbg {
+    /* background-color: #262e45; */
+    height: 100%;
+    position: absolute;
+    z-index: -1 ;
+    width: 100%;
+    background-color: #0f121a;
  }
  .hero-section-wrap {    
     width: 100%;
+    position: relative;
  }
  .hero-section .change-wrap-text h1 {
     /* font-family: 'Gilroy'; */
@@ -82,7 +87,7 @@
              animation: blink 4s infinite alternate;
     }
     .socod {
-    font-size: 11vw;
+    /* font-size: 11vw; */
     color: #d4eaff;
     text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
     -webkit-animation: buzz 0.01s infinite alternate;
@@ -148,7 +153,7 @@
     padding-top: 280px;
  }
  .up-hero-section-wrap .hero-section {
-    height: 1210px;
+    height: 900px;
     padding-top: 110px;
  }
  @media (min-width: 1199px) {
@@ -165,7 +170,7 @@
        padding-top: 140px;
     }
     .up-hero-section-wrap .hero-section {
-       height: 1060px;
+       height: 830px;
     }
     .up-hero-section-wrap #gradient-canvas {
        height: 1250px;
@@ -230,7 +235,7 @@
         font-size: 50px;
      }
     .hero-section-wrap .hero-section {
-       height: 750px;
+       height: 660px;
        margin-bottom: 50px;
     }
     .hero-section-wrap .hero-section p {
@@ -390,21 +395,30 @@
     filter: grayscale(100%); */
     /* filter: brightness(0) saturate(100%) invert(14%) sepia(30%) saturate(881%) hue-rotate(187deg) brightness(91%) contrast(88%); */
 }
-.fsec_img1{
-    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img1.jpeg);
+.patternbg{
+   background-color: #414552;
+   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e3c2a0' fill-opacity='0.28'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-.fsec_img2{
-    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img2.jpeg);
+.patternbg .page-form .form-header {
+   background: #262e45;
+   border-radius: 15px 15px 0 0;
+   color: #e3c2a0;
+   padding: 15px 35px;
+   text-align: center;
 }
-.fsec_img3{
-    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img3.jpeg);
+.fsec_img img{
+   height: 700px;
+   max-width: fit-content !important;
+   -webkit-filter: blur(4px) brightness(70%) grayscale(100%);
+   filter: blur(4px) brightness(70%) grayscale(100%);
 }
-.fsec_img4{
-    background-image: linear-gradient(#262e4533 0%, rgb(38 46 69) 100%), url(https://www.weblozy.com/uploads/2023/12/img4.jpeg);
+.fsec_phone img{
+   height: 700px;
+   max-width: fit-content !important;
+   -webkit-filter: blur(4px) brightness(70%) grayscale(100%);
+   filter: blur(4px) brightness(70%) grayscale(100%);
 }
-
 .fsec:hover{
-    /* transform: translateX(10px); */
     transform: scale(1.1);
     transition: transform 1s ease;
     .fsec_heading1{
@@ -419,6 +433,7 @@
     position: absolute;
     bottom: 5%;
     padding-left: 5%;
+    
 }
 .fsec_content{
     display: none;
@@ -449,30 +464,40 @@
 .customcard2bg img{
    height: 100px;
 }
+
 .custom-card1{
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   border-radius: 20px;
+   min-height: 250px;
    box-shadow: 0 16px 40px rgba(14,21,47,0.4), 0 16px 40px rgba(14,21,47,0.4);
+   position: relative;
+   transition: transform 1s ease;
+   border-radius: 20px;
 }
-.custom-card1a{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-finance2.webp);
+.custom-card1a {
+   position: absolute;
 }
-.custom-card1b{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-health.webp);
+.custom-card1a img{
+   border-radius: 20px;
+   transition: transform 1s ease;
+   min-height: 250px;
 }
-.custom-card1c{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-ecommerce.webp);
+.card1-content{
+   position: relative;
+   min-height: 250px;
 }
-.custom-card1d{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-education.webp);
+.custom-card1 .card1-content .card-para{
+   position: absolute;
+   bottom: 0px;
+   padding-right: 1.5rem;
 }
-.custom-card1e{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-management.webp);
+.custom-card1 .card1-content p{
+   font-size: 18px;
 }
-.custom-card1f{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-cosmetic.webp);
+.custom-card1 .card1-content h5{
+   font-size: 25px;
+}
+.custom-card1:hover{
+   transform: scale(1.05);
+   transition: transform 1s ease;
 }
 
 .custom-card2{
@@ -480,6 +505,16 @@
    padding: 22px 22px 22px 22px;
    border-radius: 20px;
    
+}
+.bggrad1{
+   /* background-color:  #262E45 !important; */
+   background: rgb(174,238,174);
+   background: linear-gradient(90deg, rgba(174,238,174,1) 0%, rgba(148,187,233,1) 100%);
+}
+.bggrad2{
+   /* background-color:  #1A2030 !important; */
+   background: rgb(199,196,225);
+   background: linear-gradient(90deg, rgba(199,196,225,1) 0%, rgba(199,196,225,1) 44%, rgba(148,223,202,1) 100%);
 }
 .bg-grey{
    background-color: #F8F8F8;
@@ -493,7 +528,7 @@
    font-weight: bold;
 }
 .custom-faq{
-   background-image: url(https://www.weblozy.com/uploads/2024/01/bg-504.webp);
+   /* background-image: url(https://www.weblozy.com/uploads/2024/01/bg-504.webp); */
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -529,8 +564,8 @@
  }
  .accordion-black button{
    text-decoration: none;
-   font-size: 30px;
-   font-weight: 300;
+   font-size: 24px;
+   font-weight: 600;
  }
  .accordion-white{
    background-color: #fff;
@@ -595,7 +630,7 @@
 }
 .left-side .head{
    padding: 15px 18px;
-   background-color: rgb(233, 233, 233);
+   background-color: #262e45;
    border: 1px solid rgb(233, 232, 232);
    border-radius: 10px 10px 0px 0px;
 }
@@ -833,10 +868,6 @@
 }
 
 .cta-bg-img{
-   /* background-image: url('https://www.weblozy.com/uploads/2023/12/visa-bg-4.webp');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover; */
    background-color: #262e45;
 }
 
@@ -851,6 +882,7 @@
 	overflow:hidden;
 	position: relative;
 	width: auto;
+   background-color: #e3c2a0;
 }
 .logoslider img {
    -webkit-filter: grayscale(100%);
@@ -885,14 +917,7 @@
 .font22{
    font-size: 22px !important;
 }
-.myfaq button{
-   width: 98%;
-   margin-top: 1%;
-   margin-bottom: 1%;
-   margin-right: auto;
-   margin-left: auto;
-   border-radius: 4px;
-}
+
 .logohead{
    position: absolute;
    height: 100%;
@@ -901,4 +926,88 @@
    color: #e3c2a0;
    vertical-align: middle;
    padding: 10px 40px;
+}
+.contact-form-foot{
+   max-width: 900px;
+}
+
+@media (min-width: 768px) {
+   .myfaq .accordion{
+      max-width: 80%;
+      margin: auto;
+   }
+}
+
+.mylist ul li::before {
+   content: "\2022";
+   color: #e3c2a0;
+   font-size: 20px;
+   font-weight: bold;
+   display: inline-block;
+   width: 1em;
+   margin-left: -16.65px;
+ }
+
+.myfaq .accordion{
+   background-color: #F8F8F8;
+}
+.myfaq .accordion-item:not(:last-child) {
+   margin-bottom: 10px;
+}
+.myfaq .accordion-button:not(.collapsed) {
+   background-color: #f8f8f800;
+   box-shadow: none;
+}
+.myfaq .accordion-item {
+   border-top: 3px solid gray;
+   box-shadow: none;
+   overflow: hidden;
+}
+.myfaq .button{
+   background-color: #f8f8f800 !important;
+}
+
+.myfaq .accordion-button::after {
+   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+   transform: scale(.7) !important;
+ }
+ .myfaq .accordion-button:not(.collapsed)::after {
+   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+ }
+
+
+.portfolio-page .section-portfolio {
+   position: relative;
+   /* z-index: 2; */
+   /* height: 75vh; */
+   /* background: #1e1f23; */
+}
+.portfolio-page .section-portfolio .port-text .text {
+   font-size: 70px;
+   text-align: center;
+}
+.portfolio-page .section-portfolio .port-text  {
+   align-items: center;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   font-size: 3rem;
+   font-weight: 700;
+   left: 20%;
+   line-height: 1.2;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+@media (max-width: 768px) {
+   .portfolio-page .section-portfolio {
+      height: 60vh;
+   }
+   .portfolio-page .section-portfolio .heroimg img{
+      height: 60vh !important;
+      max-width: fit-content;
+   }
+   .portfolio-page .section-portfolio .port-text  {
+      left: 50%;
+   }
 }
